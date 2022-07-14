@@ -3,26 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		90E94931288069A000080C0F /* FormsPlaygroundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E94930288069A000080C0F /* FormsPlaygroundsApp.swift */; };
-		90E94933288069A000080C0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E94932288069A000080C0F /* ContentView.swift */; };
-		90E94935288069A100080C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E94934288069A100080C0F /* Assets.xcassets */; };
-		90E94938288069A100080C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E94937288069A100080C0F /* Preview Assets.xcassets */; };
+		90696DB228813B7B00D474E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90696DB128813B7B00D474E2 /* Assets.xcassets */; };
+		90696DB528813B7B00D474E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90696DB428813B7B00D474E2 /* Preview Assets.xcassets */; };
+		90696DC928813C0B00D474E2 /* FPFormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90696DC528813C0B00D474E2 /* FPFormComponent.swift */; };
+		90696DCA28813C0B00D474E2 /* FPForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90696DC628813C0B00D474E2 /* FPForm.swift */; };
+		90696DCB28813C0B00D474E2 /* FPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90696DC728813C0B00D474E2 /* FPTextField.swift */; };
+		90696DCC28813C0B00D474E2 /* FPValidationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90696DC828813C0B00D474E2 /* FPValidationContext.swift */; };
+		90696DCE28813C1700D474E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90696DCD28813C1700D474E2 /* ContentView.swift */; };
+		90696DD028813C1E00D474E2 /* FormsPlaygroundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90696DCF28813C1E00D474E2 /* FormsPlaygroundsApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		90E9492D288069A000080C0F /* FormsPlaygrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsPlaygrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		90E94930288069A000080C0F /* FormsPlaygroundsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsPlaygroundsApp.swift; sourceTree = "<group>"; };
-		90E94932288069A000080C0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		90E94934288069A100080C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		90E94937288069A100080C0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90696DAA28813B7A00D474E2 /* FormsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90696DB128813B7B00D474E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90696DB428813B7B00D474E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90696DC528813C0B00D474E2 /* FPFormComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPFormComponent.swift; sourceTree = "<group>"; };
+		90696DC628813C0B00D474E2 /* FPForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPForm.swift; sourceTree = "<group>"; };
+		90696DC728813C0B00D474E2 /* FPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPTextField.swift; sourceTree = "<group>"; };
+		90696DC828813C0B00D474E2 /* FPValidationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPValidationContext.swift; sourceTree = "<group>"; };
+		90696DCD28813C1700D474E2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90696DCF28813C1E00D474E2 /* FormsPlaygroundsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsPlaygroundsApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		90E9492A288069A000080C0F /* Frameworks */ = {
+		90696DA728813B7A00D474E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,126 +40,167 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		90E94924288069A000080C0F = {
+		90696DA128813B7A00D474E2 = {
 			isa = PBXGroup;
 			children = (
-				90E9492F288069A000080C0F /* FormsPlaygrounds */,
-				90E9492E288069A000080C0F /* Products */,
+				90696DAC28813B7A00D474E2 /* FormsPlayground */,
+				90696DAB28813B7A00D474E2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		90E9492E288069A000080C0F /* Products */ = {
+		90696DAB28813B7A00D474E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90E9492D288069A000080C0F /* FormsPlaygrounds.app */,
+				90696DAA28813B7A00D474E2 /* FormsPlayground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		90E9492F288069A000080C0F /* FormsPlaygrounds */ = {
+		90696DAC28813B7A00D474E2 /* FormsPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				90E94930288069A000080C0F /* FormsPlaygroundsApp.swift */,
-				90E94932288069A000080C0F /* ContentView.swift */,
-				90E94934288069A100080C0F /* Assets.xcassets */,
-				90E94936288069A100080C0F /* Preview Content */,
+				90696DC228813BE400D474E2 /* App */,
+				90696DC328813BEC00D474E2 /* Views */,
+				90696DC428813BF900D474E2 /* Forms */,
+				90696DBB28813BAC00D474E2 /* Resources */,
 			);
-			path = FormsPlaygrounds;
+			path = FormsPlayground;
 			sourceTree = "<group>";
 		};
-		90E94936288069A100080C0F /* Preview Content */ = {
+		90696DB328813B7B00D474E2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				90E94937288069A100080C0F /* Preview Assets.xcassets */,
+				90696DB428813B7B00D474E2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90696DBB28813BAC00D474E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90696DB128813B7B00D474E2 /* Assets.xcassets */,
+				90696DB328813B7B00D474E2 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90696DC228813BE400D474E2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				90696DCF28813C1E00D474E2 /* FormsPlaygroundsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		90696DC328813BEC00D474E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90696DCD28813C1700D474E2 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90696DC428813BF900D474E2 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				90696DC628813C0B00D474E2 /* FPForm.swift */,
+				90696DC528813C0B00D474E2 /* FPFormComponent.swift */,
+				90696DC728813C0B00D474E2 /* FPTextField.swift */,
+				90696DC828813C0B00D474E2 /* FPValidationContext.swift */,
+			);
+			path = Forms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90E9492C288069A000080C0F /* FormsPlaygrounds */ = {
+		90696DA928813B7A00D474E2 /* FormsPlayground */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90E9493B288069A100080C0F /* Build configuration list for PBXNativeTarget "FormsPlaygrounds" */;
+			buildConfigurationList = 90696DB828813B7B00D474E2 /* Build configuration list for PBXNativeTarget "FormsPlayground" */;
 			buildPhases = (
-				90E94929288069A000080C0F /* Sources */,
-				90E9492A288069A000080C0F /* Frameworks */,
-				90E9492B288069A000080C0F /* Resources */,
+				90696DA628813B7A00D474E2 /* Sources */,
+				90696DA728813B7A00D474E2 /* Frameworks */,
+				90696DA828813B7A00D474E2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FormsPlaygrounds;
-			productName = FormsPlaygrounds;
-			productReference = 90E9492D288069A000080C0F /* FormsPlaygrounds.app */;
+			name = FormsPlayground;
+			productName = FormsPlayground;
+			productReference = 90696DAA28813B7A00D474E2 /* FormsPlayground.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		90E94925288069A000080C0F /* Project object */ = {
+		90696DA228813B7A00D474E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					90E9492C288069A000080C0F = {
-						CreatedOnToolsVersion = 14.0;
+					90696DA928813B7A00D474E2 = {
+						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
-			buildConfigurationList = 90E94928288069A000080C0F /* Build configuration list for PBXProject "FormsPlaygrounds" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 90696DA528813B7A00D474E2 /* Build configuration list for PBXProject "FormsPlayground" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 90E94924288069A000080C0F;
-			productRefGroup = 90E9492E288069A000080C0F /* Products */;
+			mainGroup = 90696DA128813B7A00D474E2;
+			productRefGroup = 90696DAB28813B7A00D474E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90E9492C288069A000080C0F /* FormsPlaygrounds */,
+				90696DA928813B7A00D474E2 /* FormsPlayground */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		90E9492B288069A000080C0F /* Resources */ = {
+		90696DA828813B7A00D474E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90E94938288069A100080C0F /* Preview Assets.xcassets in Resources */,
-				90E94935288069A100080C0F /* Assets.xcassets in Resources */,
+				90696DB528813B7B00D474E2 /* Preview Assets.xcassets in Resources */,
+				90696DB228813B7B00D474E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		90E94929288069A000080C0F /* Sources */ = {
+		90696DA628813B7A00D474E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90E94933288069A000080C0F /* ContentView.swift in Sources */,
-				90E94931288069A000080C0F /* FormsPlaygroundsApp.swift in Sources */,
+				90696DCB28813C0B00D474E2 /* FPTextField.swift in Sources */,
+				90696DCE28813C1700D474E2 /* ContentView.swift in Sources */,
+				90696DC928813C0B00D474E2 /* FPFormComponent.swift in Sources */,
+				90696DCC28813C0B00D474E2 /* FPValidationContext.swift in Sources */,
+				90696DD028813C1E00D474E2 /* FormsPlaygroundsApp.swift in Sources */,
+				90696DCA28813C0B00D474E2 /* FPForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		90E94939288069A100080C0F /* Debug */ = {
+		90696DB628813B7B00D474E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -195,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -205,13 +254,13 @@
 			};
 			name = Debug;
 		};
-		90E9493A288069A100080C0F /* Release */ = {
+		90696DB728813B7B00D474E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -249,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -259,14 +308,15 @@
 			};
 			name = Release;
 		};
-		90E9493C288069A100080C0F /* Debug */ = {
+		90696DB928813B7B00D474E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FormsPlaygrounds/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "FormsPlayground/Resources/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6LUKKGTQB5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -275,27 +325,30 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qeltive.dev.FormsPlaygrounds;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qeltive.dev.FormsPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		90E9493D288069A100080C0F /* Release */ = {
+		90696DBA28813B7B00D474E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FormsPlaygrounds/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "FormsPlayground/Resources/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6LUKKGTQB5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,41 +357,42 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qeltive.dev.FormsPlaygrounds;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qeltive.dev.FormsPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90E94928288069A000080C0F /* Build configuration list for PBXProject "FormsPlaygrounds" */ = {
+		90696DA528813B7A00D474E2 /* Build configuration list for PBXProject "FormsPlayground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90E94939288069A100080C0F /* Debug */,
-				90E9493A288069A100080C0F /* Release */,
+				90696DB628813B7B00D474E2 /* Debug */,
+				90696DB728813B7B00D474E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90E9493B288069A100080C0F /* Build configuration list for PBXNativeTarget "FormsPlaygrounds" */ = {
+		90696DB828813B7B00D474E2 /* Build configuration list for PBXNativeTarget "FormsPlayground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90E9493C288069A100080C0F /* Debug */,
-				90E9493D288069A100080C0F /* Release */,
+				90696DB928813B7B00D474E2 /* Debug */,
+				90696DBA28813B7B00D474E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 90E94925288069A000080C0F /* Project object */;
+	rootObject = 90696DA228813B7A00D474E2 /* Project object */;
 }
