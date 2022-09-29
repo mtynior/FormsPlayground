@@ -16,20 +16,29 @@ struct FPForm<Content: View>: View {
     }
     
     var body: some View {
-        GeometryReader { geometryReader in
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 20) {
-                    content(formReader)
-                }
-                .environmentObject(formReader)
-                
+        FPScrollView(.vertical, showsIndicators: false) {
+            VStack(spacing: 20) {
+                content(formReader)
             }
-            .padding()
+            .environmentObject(formReader)
+            
         }
+        .scrollDisabled(true)
+        .padding(.horizontal)
     }
 }
 
 public class FormReader: ObservableObject {
+    let id: String = UUID().uuidString
+    
+    init() {
+        print("Init FormReader \(id)")
+    }
+    
+    deinit {
+        print("Deinit FormReader \(id)")
+    }
+    
     var validators: [(id: String, value: FPValidationContext)] = []
     
     func setValidationContext(_ validationContext: FPValidationContext?, forInputWithId id: String) {

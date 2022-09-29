@@ -13,61 +13,35 @@ struct ContentView: View {
     @State var rePassword: String = ""
     
     var body: some View {
-        FPForm { formReader in
-            FPTextField(text: $login, id: "login")
-                .label("Login")
-                .placeholder("Enter login")
-                .setValidators([Validators.required])
-            
-            FPTextField(text: $password, id: "password")
-                .label("Password")
-                .placeholder("Enter password")
-                .counterVisible(true)
-                .setValidators([Validators.required, Validators.lenght])
-                .limit(10)
-            
-            /*Group {
-                FPTextField(text: $password, id: "password1")
-                    .label("Password")
-                
-                FPTextField(text: $password, id: "password2")
-                    .label("Password")
-                
-                FPTextField(text: $password, id: "password3")
-                    .label("Password")
-                
-                FPTextField(text: $password, id: "password4")
-                    .label("Password")
-                
-                FPTextField(text: $password, id: "password5")
-                    .label("Password")
-                
-                FPTextField(text: $password, id: "password7")
-                    .label("Password")
-                
-                FPTextField(text: $password, id: "password8")
-                    .label("Password")
-                
-                FPTextField(text: $password, id: "password9")
-                    .label("Password")
-                
-                FPTextField(text: $password, id: "password10")
-                    .label("Password")
-                
+        VStack {
+            ScrollView {
                 VStack {
-                    HStack {
-                        FPTextField(text: $rePassword, id: "password11")
-                            .label("Repassword")
+                    VStack {
+                        Spacer()
+                    }
+                    .frame(height: 500)
+                    
+                    FPForm { formReader in
+                        FPTextField(text: $login, id: "login")
+                            .label("Login")
+                            .placeholder("Enter login")
+                            .setValidators([Validators.required])
+                        
+                        FPTextField(text: $password, id: "password")
+                            .label("Password")
+                            .placeholder("Enter password")
+                            .counterVisible(true)
                             .setValidators([Validators.required, Validators.lenght])
+                            .limit(10)
+                        
+                        Button("Login", action: { formReader.validate() })
+                            .buttonStyle(.borderedProminent)
+                        
+                        Button("Reset", action: { password = "" })
+                            .buttonStyle(.plain)
                     }
                 }
-            }*/
-            
-            Button("Login", action: { formReader.validate() })
-                .buttonStyle(.borderedProminent)
-            
-            Button("Reset", action: { formReader.clearErrors() })
-                .buttonStyle(.plain)
+            }
         }
     }
 }
