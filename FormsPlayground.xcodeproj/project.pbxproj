@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90222D9528EB3B330067A141 /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90222D9428EB3B330067A141 /* BindingView.swift */; };
+		90222D9728EB3BB20067A141 /* FPScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90222D9628EB3BB20067A141 /* FPScrollView.swift */; };
 		90696DB228813B7B00D474E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90696DB128813B7B00D474E2 /* Assets.xcassets */; };
 		90696DB528813B7B00D474E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90696DB428813B7B00D474E2 /* Preview Assets.xcassets */; };
 		90696DC928813C0B00D474E2 /* FPFormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90696DC528813C0B00D474E2 /* FPFormComponent.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90222D9428EB3B330067A141 /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
+		90222D9628EB3BB20067A141 /* FPScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPScrollView.swift; sourceTree = "<group>"; };
 		90696DAA28813B7A00D474E2 /* FormsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90696DB128813B7B00D474E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90696DB428813B7B00D474E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				90696DCD28813C1700D474E2 /* ContentView.swift */,
+				90222D9428EB3B330067A141 /* BindingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 		90696DC428813BF900D474E2 /* Forms */ = {
 			isa = PBXGroup;
 			children = (
+				90222D9628EB3BB20067A141 /* FPScrollView.swift */,
 				90696DC628813C0B00D474E2 /* FPForm.swift */,
 				90696DC528813C0B00D474E2 /* FPFormComponent.swift */,
 				90696DC728813C0B00D474E2 /* FPTextField.swift */,
@@ -184,8 +190,10 @@
 			files = (
 				90696DCB28813C0B00D474E2 /* FPTextField.swift in Sources */,
 				90696DCE28813C1700D474E2 /* ContentView.swift in Sources */,
+				90222D9528EB3B330067A141 /* BindingView.swift in Sources */,
 				90696DC928813C0B00D474E2 /* FPFormComponent.swift in Sources */,
 				90696DCC28813C0B00D474E2 /* FPValidationContext.swift in Sources */,
+				90222D9728EB3BB20067A141 /* FPScrollView.swift in Sources */,
 				90696DD028813C1E00D474E2 /* FormsPlaygroundsApp.swift in Sources */,
 				90696DCA28813C0B00D474E2 /* FPForm.swift in Sources */,
 			);
