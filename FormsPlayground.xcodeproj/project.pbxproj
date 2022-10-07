@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		90222D9528EB3B330067A141 /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90222D9428EB3B330067A141 /* BindingView.swift */; };
 		90222D9728EB3BB20067A141 /* FPScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90222D9628EB3BB20067A141 /* FPScrollView.swift */; };
+		902628E428F0AC0E00EA74F2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902628E328F0AC0E00EA74F2 /* Colors.swift */; };
+		902628E728F0CA4D00EA74F2 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902628E628F0CA4D00EA74F2 /* Fonts.swift */; };
 		90696DB228813B7B00D474E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90696DB128813B7B00D474E2 /* Assets.xcassets */; };
 		90696DB528813B7B00D474E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90696DB428813B7B00D474E2 /* Preview Assets.xcassets */; };
 		90696DC928813C0B00D474E2 /* FPFormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90696DC528813C0B00D474E2 /* FPFormComponent.swift */; };
@@ -22,6 +24,10 @@
 /* Begin PBXFileReference section */
 		90222D9428EB3B330067A141 /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
 		90222D9628EB3BB20067A141 /* FPScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPScrollView.swift; sourceTree = "<group>"; };
+		902628E028F0A2AE00EA74F2 /* ThemeColorVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorVerification.swift; sourceTree = "<group>"; };
+		902628E328F0AC0E00EA74F2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		902628E628F0CA4D00EA74F2 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		902628E828F0CFA400EA74F2 /* ThemeFontsVerfication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFontsVerfication.swift; sourceTree = "<group>"; };
 		90696DAA28813B7A00D474E2 /* FormsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90696DB128813B7B00D474E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90696DB428813B7B00D474E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +50,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		902628DF28F0A29800EA74F2 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				902628E028F0A2AE00EA74F2 /* ThemeColorVerification.swift */,
+				902628E828F0CFA400EA74F2 /* ThemeFontsVerfication.swift */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		902628E528F0AC1300EA74F2 /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				902628E328F0AC0E00EA74F2 /* Colors.swift */,
+				902628E628F0CA4D00EA74F2 /* Fonts.swift */,
+			);
+			path = Theming;
+			sourceTree = "<group>";
+		};
 		90696DA128813B7A00D474E2 = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +90,9 @@
 				90696DC228813BE400D474E2 /* App */,
 				90696DC328813BEC00D474E2 /* Views */,
 				90696DC428813BF900D474E2 /* Forms */,
+				902628E528F0AC1300EA74F2 /* Theming */,
 				90696DBB28813BAC00D474E2 /* Resources */,
+				902628DF28F0A29800EA74F2 /* Scripts */,
 			);
 			path = FormsPlayground;
 			sourceTree = "<group>";
@@ -127,6 +153,8 @@
 				90696DA628813B7A00D474E2 /* Sources */,
 				90696DA728813B7A00D474E2 /* Frameworks */,
 				90696DA828813B7A00D474E2 /* Resources */,
+				902628E128F0A47500EA74F2 /* ShellScript */,
+				902628EA28F0D0C200EA74F2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -183,16 +211,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		902628E128F0A47500EA74F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/bin/xcrun --sdk macosx swift ./FormsPlayground/Scripts/ThemeColorVerification.swift ./FormsPlayground/Theming/Colors.swift\n";
+		};
+		902628EA28F0D0C200EA74F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/bin/xcrun --sdk macosx swift ./FormsPlayground/Scripts/ThemeFontsVerfication.swift ./FormsPlayground/Theming/Fonts.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90696DA628813B7A00D474E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				90696DCB28813C0B00D474E2 /* FPTextField.swift in Sources */,
+				902628E428F0AC0E00EA74F2 /* Colors.swift in Sources */,
 				90696DCE28813C1700D474E2 /* ContentView.swift in Sources */,
 				90222D9528EB3B330067A141 /* BindingView.swift in Sources */,
 				90696DC928813C0B00D474E2 /* FPFormComponent.swift in Sources */,
 				90696DCC28813C0B00D474E2 /* FPValidationContext.swift in Sources */,
+				902628E728F0CA4D00EA74F2 /* Fonts.swift in Sources */,
 				90222D9728EB3BB20067A141 /* FPScrollView.swift in Sources */,
 				90696DD028813C1E00D474E2 /* FormsPlaygroundsApp.swift in Sources */,
 				90696DCA28813C0B00D474E2 /* FPForm.swift in Sources */,
