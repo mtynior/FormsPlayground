@@ -14,6 +14,7 @@ public enum Font {
     private static  let  systemStandardBold = UIFont.systemFont(ofSize: 14, weight: .bold)
         
     static let systemSmallBold = UIFont.systemFont(ofSize: 8, weight: .bold)
+    static let systemSmallMedium = UIFont.systemFont(ofSize: 8, weight: .medium) // themelint:disable fonts
 }
 
 public extension SwiftUI.Font {

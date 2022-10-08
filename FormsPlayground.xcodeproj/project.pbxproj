@@ -24,10 +24,10 @@
 /* Begin PBXFileReference section */
 		90222D9428EB3B330067A141 /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
 		90222D9628EB3BB20067A141 /* FPScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPScrollView.swift; sourceTree = "<group>"; };
-		902628E028F0A2AE00EA74F2 /* ThemeColorVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorVerification.swift; sourceTree = "<group>"; };
+		902628E028F0A2AE00EA74F2 /* ThemeColorLinting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorLinting.swift; sourceTree = "<group>"; };
 		902628E328F0AC0E00EA74F2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		902628E628F0CA4D00EA74F2 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		902628E828F0CFA400EA74F2 /* ThemeFontsVerfication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFontsVerfication.swift; sourceTree = "<group>"; };
+		902628E828F0CFA400EA74F2 /* ThemeFontsLinting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFontsLinting.swift; sourceTree = "<group>"; };
 		90696DAA28813B7A00D474E2 /* FormsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90696DB128813B7B00D474E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90696DB428813B7B00D474E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -53,8 +53,8 @@
 		902628DF28F0A29800EA74F2 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				902628E028F0A2AE00EA74F2 /* ThemeColorVerification.swift */,
-				902628E828F0CFA400EA74F2 /* ThemeFontsVerfication.swift */,
+				902628E028F0A2AE00EA74F2 /* ThemeColorLinting.swift */,
+				902628E828F0CFA400EA74F2 /* ThemeFontsLinting.swift */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/bin/xcrun --sdk macosx swift ./FormsPlayground/Scripts/ThemeColorVerification.swift ./FormsPlayground/Theming/Colors.swift\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/bin/xcrun --sdk macosx swift ./FormsPlayground/Scripts/ThemeColorLinting.swift ./FormsPlayground/Theming/Colors.swift\n";
 		};
 		902628EA28F0D0C200EA74F2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -246,7 +246,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/bin/xcrun --sdk macosx swift ./FormsPlayground/Scripts/ThemeFontsVerfication.swift ./FormsPlayground/Theming/Fonts.swift\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/bin/xcrun --sdk macosx swift ./FormsPlayground/Scripts/ThemeFontsLinting.swift ./FormsPlayground/Theming/Fonts.swift\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
