@@ -11,7 +11,7 @@ import SwiftUI
 struct FormsPlaygroundsApp: App {
     var body: some Scene {
         WindowGroup {
-            BindingView()
+            ContentView()
         }
     }
 }

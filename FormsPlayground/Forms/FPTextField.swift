@@ -21,7 +21,7 @@ public struct FPTextField: View {
     }
     
     public var body: some View {
-        FPFormComponent(label: viewModel.label, content: {
+        FPFormComponent(label: viewModel.label, modifiers: viewModel.componentModifiers, content: {
             TextField(text: $text, label: { Text(viewModel.placeholder ?? "") })
                 .onChange(of: $text.wrappedValue) { value in
                     validationContext.validate()
@@ -83,6 +83,12 @@ public extension FPTextField {
         validationContext.validators = validators
         return self
     }
+    
+    func addTooltip(tint: Color = Color.blue, action: @escaping () -> Void) -> Self {
+        let modifier = TooltipFPFormComponentModifier(tint: tint, action: action)
+        viewModel.componentModifiers.append(modifier)
+        return self
+    }
 }
 
 final class FPTextFieldViewModel: ObservableObject {
@@ -90,6 +96,7 @@ final class FPTextFieldViewModel: ObservableObject {
     @Published var label: String?
     @Published var isCounterVisible: Bool
     @Published var limit: Int?
+    @Published var componentModifiers: [any FPFormComponentModifier] = []
     
     init(
         placeholder: String? = nil,

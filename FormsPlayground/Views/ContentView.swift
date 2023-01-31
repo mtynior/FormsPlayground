@@ -26,6 +26,9 @@ struct ContentView: View {
                             .label("Login")
                             .placeholder("Enter login")
                             .setValidators([Validators.required])
+                            .addTooltip {
+                                print("ddd")
+                            }
                         
                         FPTextField(text: $password, id: "password")
                             .label("Password")
